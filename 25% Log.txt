@@ -1,0 +1,324 @@
+
+cast_receiver.js:40  [  0.542s] [cast.receiver.CastReceiverManager] Version: 2.0.0.0040
+cast_receiver.js:40  [  0.557s] [cast.receiver.MediaManager] Using default Player
+cast_receiver.js:40  [  0.583s] [cast.receiver.IpcChannel] Opening message bus websocket
+cast_receiver.js:40  [  0.588s] [goog.net.WebSocket] Opening the WebSocket on ws://localhost:8008/v2/ipc
+cast_receiver.js:28 Mixed Content: The page at 'https://player.ooyala.com/static/chromecast/staging/receiver_custom_qa.html' was loaded over HTTPS, but attempted to connect to the insecure WebSocket endpoint 'ws://localhost:8008/v2/ipc'. This endpoint should be available via WSS. Insecure access is deprecated.
+cast_receiver.js:28 Connecting to a non-secure WebSocket server from a secure origin is deprecated.
+cast_receiver.js:40  [  0.637s] [goog.net.WebSocket] WebSocket opened on ws://localhost:8008/v2/ipc
+cast_receiver.js:40  [  0.660s] [cast.receiver.IpcChannel] IpcChannel opened
+cast_receiver.js:40  [  0.674s] [cast.receiver.CastMessageBus] Dispatching CastMessageBus message
+cast_receiver.js:40  [  0.697s] [cast.receiver.CastReceiverManager] Underlying message bus is open
+cast_receiver.js:40  [  0.727s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:com.google.cast.system","senderId":"SystemSender","data":"{\"type\":\"ready\",\"activeNamespaces\":[\"urn:x-cast:com.google.cast.media\",\"urn:x-cast:ooyala\"],\"version\":\"2.0.0\",\"messagesVersion\":\"1.0\"}"}
+cast_receiver.js:40  [  0.738s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:com.google.cast.system","senderId":"SystemSender","data":"{\"type\":\"startheartbeat\",\"maxInactivity\":10}"}
+cast_receiver.js:40  [  0.795s] [cast.receiver.IpcChannel] Received message: {"data":"{\"applicationId\":\"ED0DE097\",\"applicationName\":\"STAGING QA Receiver\",\"closedCaption\":{},\"deviceCapabilities\":{\"bluetooth_supported\":false,\"display_supported\":true},\"launchingSenderId\":\"31:com.ooyala.sample.ChromecastSampleApp-8\",\"messagesVersion\":\"1.0\",\"sessionId\":\"05D47135-51E6-4898-94F5-4E18AF8E7126\",\"type\":\"ready\",\"version\":\"1.17.46278\"}","namespace":"urn:x-cast:com.google.cast.system","senderId":"SystemSender"}
+cast_receiver.js:40  [  0.806s] [cast.receiver.CastMessageBus] Dispatching CastMessageBus message
+cast_receiver.js:40  [  0.827s] [cast.receiver.CastReceiverManager] Dispatching CastReceiverManager system ready event
+cast_receiver.js:40  [  0.845s] [cast.receiver.IpcChannel] Received message: {"data":"{\"level\":1.0,\"muted\":false,\"type\":\"volumechanged\"}","namespace":"urn:x-cast:com.google.cast.system","senderId":"SystemSender"}
+cast_receiver.js:40  [  0.851s] [cast.receiver.CastMessageBus] Dispatching CastMessageBus message
+cast_receiver.js:40  [  0.857s] [cast.receiver.CastReceiverManager] Dispatching system volume changed event [1, false]
+cast_receiver.js:40  [  0.863s] [cast.receiver.IpcChannel] Received message: {"data":"{\"type\":\"visibilitychanged\",\"visible\":true}","namespace":"urn:x-cast:com.google.cast.system","senderId":"SystemSender"}
+cast_receiver.js:40  [  0.865s] [cast.receiver.CastMessageBus] Dispatching CastMessageBus message
+cast_receiver.js:40  [  0.868s] [cast.receiver.CastReceiverManager] Dispatching visibility changed event true
+cast_receiver.js:40  [  0.872s] [cast.receiver.IpcChannel] Received message: {"data":"{\"standby\":false,\"type\":\"standbychanged\"}","namespace":"urn:x-cast:com.google.cast.system","senderId":"SystemSender"}
+cast_receiver.js:40  [  0.874s] [cast.receiver.CastMessageBus] Dispatching CastMessageBus message
+cast_receiver.js:40  [  0.876s] [cast.receiver.CastReceiverManager] Dispatching standby changed event false
+cast_receiver.js:40  [  0.885s] [cast.receiver.IpcChannel] Received message: {"data":"{\"senderId\":\"31:com.ooyala.sample.ChromecastSampleApp-8\",\"type\":\"senderconnected\",\"userAgent\":\"Android CastSDK,8489446,Nexus 9,volantis,6.0\"}","namespace":"urn:x-cast:com.google.cast.system","senderId":"SystemSender"}
+cast_receiver.js:40  [  0.887s] [cast.receiver.CastMessageBus] Dispatching CastMessageBus message
+cast_receiver.js:40  [  0.889s] [cast.receiver.CastReceiverManager] Dispatching CastReceiverManager sender connected event [31:com.ooyala.sample.ChromecastSampleApp-8]
+cast_receiver.js:40  [  0.892s] [cast.receiver.CastMessageBus] Registering sender [urn:x-cast:com.google.cast.media, 31:com.ooyala.sample.ChromecastSampleApp-8]
+cast_receiver.js:40  [  0.894s] [cast.receiver.CastMessageBus] Registering sender [urn:x-cast:ooyala, 31:com.ooyala.sample.ChromecastSampleApp-8]
+receiver_custom_qa.html:292 Player-debug connected senders [
+	"31:com.ooyala.sample.ChromecastSampleApp-8"
+]
+cast_receiver.js:40  [  0.948s] [cast.receiver.IpcChannel] Received message: {"data":"{\"requestId\":1,\"type\":\"GET_STATUS\"}","namespace":"urn:x-cast:com.google.cast.media","senderId":"31:com.ooyala.sample.ChromecastSampleApp-8"}
+cast_receiver.js:40  [  0.950s] [cast.receiver.CastMessageBus] Dispatching CastMessageBus message
+cast_receiver.js:40  [  0.953s] [cast.receiver.MediaManager] MediaManager message received
+cast_receiver.js:40  [  0.954s] [cast.receiver.MediaManager] Dispatching MediaManager getStatus event
+receiver_custom_qa.html:288 Chromecast-debug onGetStatus {
+	"type": "getstatus",
+	"Z": false,
+	"defaultPrevented": false,
+	"Zb": true,
+	"data": {
+		"customData": {
+			"debug": true
+		}
+	},
+	"senderId": "31:com.ooyala.sample.ChromecastSampleApp-8"
+}
+cast_receiver.js:40  [  0.963s] [cast.receiver.MediaManager] Sending status message to 31:com.ooyala.sample.ChromecastSampleApp-8
+cast_receiver.js:40  [  0.967s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:com.google.cast.media","senderId":"31:com.ooyala.sample.ChromecastSampleApp-8","data":"{\"type\":\"MEDIA_STATUS\",\"status\":[]}"}
+cast_receiver.js:40  [  1.206s] [cast.receiver.IpcChannel] Received message: {"data":"{\"requestId\":1,\"type\":\"GET_STATUS\"}","namespace":"urn:x-cast:com.google.cast.media","senderId":"29:com.google.android.apps.chromecast.app-2"}
+cast_receiver.js:40  [  1.207s] [cast.receiver.CastMessageBus] Dispatching CastMessageBus message
+cast_receiver.js:40  [  1.208s] [cast.receiver.MediaManager] MediaManager message received
+cast_receiver.js:40  [  1.209s] [cast.receiver.MediaManager] Dispatching MediaManager getStatus event
+receiver_custom_qa.html:288 Chromecast-debug onGetStatus {
+	"type": "getstatus",
+	"Z": false,
+	"defaultPrevented": false,
+	"Zb": true,
+	"data": {
+		"customData": {
+			"debug": true
+		}
+	},
+	"senderId": "29:com.google.android.apps.chromecast.app-2"
+}
+cast_receiver.js:40  [  1.224s] [cast.receiver.MediaManager] Sending status message to 29:com.google.android.apps.chromecast.app-2
+cast_receiver.js:40  [  1.226s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:com.google.cast.media","senderId":"29:com.google.android.apps.chromecast.app-2","data":"{\"type\":\"MEDIA_STATUS\",\"status\":[]}"}
+cast_receiver.js:40 [ 23.902s] [cast.receiver.IpcChannel] Received message: {"data":"{\"requestId\":2,\"type\":\"LOAD\",\"media\":{\"contentId\":\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\",\"streamType\":\"BUFFERED\",\"contentType\":\"video\\/mp4\",\"metadata\":{\"metadataType\":0,\"images\":[{\"url\":\"http:\\/\\/ak.c.ooyala.com\\/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\\/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8\",\"width\":0,\"height\":0}],\"title\":\"Android Chromecast Sender ANA\"},\"duration\":null,\"customData\":{\"embedToken\":\"http:\\/\\/player.ooyala.com\\/sas\\/embed_token\\/04c2w6i30YAK09cxroJ0mFx86Hmv\\/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu?account_id=accountID&api_key=04c2w6i30YAK09cxroJ0mFx86Hmv.HVphU&expires=1452672606&signature=G4kW1cFufjrKoHQ0WHhjiSEfdnkyy%2FOQnQcIwGlWkvE\",\"authToken\":\"MkszemVlZFltaUVpMDk0YUR2cDMxRmQ3U3QzVXFMWFl6SXBwb2s4TERzU1FoU1AxTmIzYTVRbExBeCtoCmlHL0tsdHZ1bE9ueGRmMS9QMUdNTjJXNkxndU56akxOaTZnV04yOGFrdnBzQkd1S0FnZmgxbHpnTEV6YgpScVpoemVTN0lkM3RHRkFIaUxDeDVsbkFuaVIzM3JUaitjUmhLc2IxYnp1S3VETkNrZHAvaE9tM3J1Y3EKMTNyVnBJTHB1K2ZEV2R4aVZ1MjZyUUJHRXRWQkRHMTA5S0VROVZhSE9MVzhzb3RRTXc2a1pTQ1l1YXEwCkNnQk5ObkNYSUN0VndwcysK\",\"domain\":\"http:\\/\\/www.ooyala.com\",\"ec\":\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\",\"params\":\"{\\\"embedToken\\\":\\\"http:\\\\\\/\\\\\\/player.ooyala.com\\\\\\/sas\\\\\\/embed_token\\\\\\/04c2w6i30YAK09cxroJ0mFx86Hmv\\\\\\/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu?account_id=accountID&api_key=04c2w6i30YAK09cxroJ0mFx86Hmv.HVphU&expires=1452672606&signature=G4kW1cFufjrKoHQ0WHhjiSEfdnkyy%2FOQnQcIwGlWkvE\\\",\\\"authToken\\\":\\\"MkszemVlZFltaUVpMDk0YUR2cDMxRmQ3U3QzVXFMWFl6SXBwb2s4TERzU1FoU1AxTmIzYTVRbExBeCtoCmlHL0tsdHZ1bE9ueGRmMS9QMUdNTjJXNkxndU56akxOaTZnV04yOGFrdnBzQkd1S0FnZmgxbHpnTEV6YgpScVpoemVTN0lkM3RHRkFIaUxDeDVsbkFuaVIzM3JUaitjUmhLc2IxYnp1S3VETkNrZHAvaE9tM3J1Y3EKMTNyVnBJTHB1K2ZEV2R4aVZ1MjZyUUJHRXRWQkRHMTA5S0VROVZhSE9MVzhzb3RRTXc2a1pTQ1l1YXEwCkNnQk5ObkNYSUN0VndwcysK\\\",\\\"domain\\\":\\\"http:\\\\\\/\\\\\\/www.ooyala.com\\\",\\\"ec\\\":\\\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\\\"}\",\"title\":\"Android Chromecast Sender ANA\",\"description\":\"Do not delete\\/update\\/use asste. Used for analytics\",\"promo_url\":\"http:\\/\\/ak.c.ooyala.com\\/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\\/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8\",\"pbid\":\"edf6a1d28ce242b8baac099cd9753fcd\"}},\"autoplay\":true,\"currentTime\":0}","namespace":"urn:x-cast:com.google.cast.media","senderId":"31:com.ooyala.sample.ChromecastSampleApp-8"}
+cast_receiver.js:40 [ 23.914s] [cast.receiver.CastMessageBus] Dispatching CastMessageBus message
+cast_receiver.js:40 [ 23.921s] [cast.receiver.MediaManager] MediaManager message received
+cast_receiver.js:40 [ 23.927s] [cast.receiver.MediaManager] Dispatching MediaManager load event
+cast_receiver.js:40 [ 23.932s] [cast.receiver.MediaManager] Load message received:{"requestId":2,"media":{"contentId":"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu","streamType":"BUFFERED","contentType":"video/mp4","metadata":{"metadataType":0,"images":[{"url":"http://ak.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8","width":0,"height":0}],"title":"Android Chromecast Sender ANA"},"duration":null,"customData":{"embedToken":"http://player.ooyala.com/sas/embed_token/04c2w6i30YAK09cxroJ0mFx86Hmv/14b2o…expires=1452672606&signature=G4kW1cFufjrKoHQ0WHhjiSEfdnkyy%2FOQnQcIwGlWkvE","authToken":"MkszemVlZFltaUVpMDk0YUR2cDMxRmQ3U3QzVXFMWFl6SXBwb2s4TERzU1FoU1AxTmIzYTVRbExBeCtoCmlHL0tsdHZ1bE9ueGRmMS9QMUdNTjJXNkxndU56akxOaTZnV04yOGFrdnBzQkd1S0FnZmgxbHpnTEV6YgpScVpoemVTN0lkM3RHRkFIaUxDeDVsbkFuaVIzM3JUaitjUmhLc2IxYnp1S3VETkNrZHAvaE9tM3J1Y3EKMTNyVnBJTHB1K2ZEV2R4aVZ1MjZyUUJHRXRWQkRHMTA5S0VROVZhSE9MVzhzb3RRTXc2a1pTQ1l1YXEwCkNnQk5ObkNYSUN0VndwcysK","domain":"http://www.ooyala.com","ec":"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu","params":"{\"embedToken\":\"http:\\/\\/player.ooyala.com\\/sas\\/embed_token\\/04c2w6i30YAK09cxroJ0mFx86Hmv\\/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu?account_id=accountID&api_key=04c2w6i30YAK09cxroJ0mFx86Hmv.HVphU&expires=1452672606&signature=G4kW1cFufjrKoHQ0WHhjiSEfdnkyy%2FOQnQcIwGlWkvE\",\"authToken\":\"MkszemVlZFltaUVpMDk0YUR2cDMxRmQ3U3QzVXFMWFl6SXBwb2s4TERzU1FoU1AxTmIzYTVRbExBeCtoCmlHL0tsdHZ1bE9ueGRmMS9QMUdNTjJXNkxndU56akxOaTZnV04yOGFrdnBzQkd1S0FnZmgxbHpnTEV6YgpScVpoemVTN0lkM3RHRkFIaUxDeDVsbkFuaVIzM3JUaitjUmhLc2IxYnp1S3VETkNrZHAvaE9tM3J1Y3EKMTNyVnBJTHB1K2ZEV2R4aVZ1MjZyUUJHRXRWQkRHMTA5S0VROVZhSE9MVzhzb3RRTXc2a1pTQ1l1YXEwCkNnQk5ObkNYSUN0VndwcysK\",\"domain\":\"http:\\/\\/www.ooyala.com\",\"ec\":\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\"}","title":"Android Chromecast Sender ANA","description":"Do not delete/update/use asste. Used for analytics","promo_url":"http://ak.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8","pbid":"edf6a1d28ce242b8baac099cd9753fcd"}},"autoplay":true,"currentTime":0}
+receiver_custom_qa.html:292Player-debug onLoad {
+	"type": "load",
+	"Z": false,
+	"defaultPrevented": false,
+	"Zb": true,
+	"data": {
+		"requestId": 2,
+		"media": {
+			"contentId": "14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu",
+			"streamType": "BUFFERED",
+			"contentType": "video/mp4",
+			"metadata": {
+				"metadataType": 0,
+				"images": [
+					{
+						"url": "http://ak.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8",
+						"width": 0,
+						"height": 0
+					}
+				],
+				"title": "Android Chromecast Sender ANA"
+			},
+			"duration": null,
+			"customData": {
+				"embedToken": "http://player.ooyala.com/sas/embed_token/04c2w6i30YAK09cxroJ0mFx86Hmv/14b2o…expires=1452672606&signature=G4kW1cFufjrKoHQ0WHhjiSEfdnkyy%2FOQnQcIwGlWkvE",
+				"authToken": "MkszemVlZFltaUVpMDk0YUR2cDMxRmQ3U3QzVXFMWFl6SXBwb2s4TERzU1FoU1AxTmIzYTVRbExBeCtoCmlHL0tsdHZ1bE9ueGRmMS9QMUdNTjJXNkxndU56akxOaTZnV04yOGFrdnBzQkd1S0FnZmgxbHpnTEV6YgpScVpoemVTN0lkM3RHRkFIaUxDeDVsbkFuaVIzM3JUaitjUmhLc2IxYnp1S3VETkNrZHAvaE9tM3J1Y3EKMTNyVnBJTHB1K2ZEV2R4aVZ1MjZyUUJHRXRWQkRHMTA5S0VROVZhSE9MVzhzb3RRTXc2a1pTQ1l1YXEwCkNnQk5ObkNYSUN0VndwcysK",
+				"domain": "http://www.ooyala.com",
+				"ec": "14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu",
+				"params": "{\"embedToken\":\"http:\\/\\/player.ooyala.com\\/sas\\/embed_token\\/04c2w6i30YAK09cxroJ0mFx86Hmv\\/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu?account_id=accountID&api_key=04c2w6i30YAK09cxroJ0mFx86Hmv.HVphU&expires=1452672606&signature=G4kW1cFufjrKoHQ0WHhjiSEfdnkyy%2FOQnQcIwGlWkvE\",\"authToken\":\"MkszemVlZFltaUVpMDk0YUR2cDMxRmQ3U3QzVXFMWFl6SXBwb2s4TERzU1FoU1AxTmIzYTVRbExBeCtoCmlHL0tsdHZ1bE9ueGRmMS9QMUdNTjJXNkxndU56akxOaTZnV04yOGFrdnBzQkd1S0FnZmgxbHpnTEV6YgpScVpoemVTN0lkM3RHRkFIaUxDeDVsbkFuaVIzM3JUaitjUmhLc2IxYnp1S3VETkNrZHAvaE9tM3J1Y3EKMTNyVnBJTHB1K2ZEV2R4aVZ1MjZyUUJHRXRWQkRHMTA5S0VROVZhSE9MVzhzb3RRTXc2a1pTQ1l1YXEwCkNnQk5ObkNYSUN0VndwcysK\",\"domain\":\"http:\\/\\/www.ooyala.com\",\"ec\":\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\"}",
+				"title": "Android Chromecast Sender ANA",
+				"description": "Do not delete/update/use asste. Used for analytics",
+				"promo_url": "http://ak.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8",
+				"pbid": "edf6a1d28ce242b8baac099cd9753fcd"
+			}
+		},
+		"autoplay": true,
+		"currentTime": 0
+	},
+	"senderId": "31:com.ooyala.sample.ChromecastSampleApp-8"
+}
+cast_receiver.js:40 [ 23.973s] [cast.receiver.MediaManager] Sending status message to 31:com.ooyala.sample.ChromecastSampleApp-8
+cast_receiver.js:40 [ 23.986s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:com.google.cast.media","senderId":"31:com.ooyala.sample.ChromecastSampleApp-8","data":"{\"type\":\"MEDIA_STATUS\",\"status\":[{\"mediaSessionId\":1,\"playbackRate\":1,\"playerState\":\"IDLE\",\"currentTime\":0,\"supportedMediaCommands\":15,\"volume\":{\"level\":1,\"muted\":false},\"media\":{\"contentId\":\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\",\"streamType\":\"BUFFERED\",\"contentType\":\"video/mp4\",\"metadata\":{\"metadataType\":0,\"images\":[{\"url\":\"http://ak.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8\",\"width\":0,\"height\":0}],\"title\":\"Android Chromecast Sender ANA\"},\"duration\":null,\"customData\":{\"embedToken\":\"http://player.ooyala.com/sas/embed_token/04c2w6i30YAK09cxroJ0mFx86Hmv/14b2o…xpires=1452672606&signature=G4kW1cFufjrKoHQ0WHhjiSEfdnkyy%2FOQnQcIwGlWkvE\",\"authToken\":\"MkszemVlZFltaUVpMDk0YUR2cDMxRmQ3U3QzVXFMWFl6SXBwb2s4TERzU1FoU1AxTmIzYTVRbExBeCtoCmlHL0tsdHZ1bE9ueGRmMS9QMUdNTjJXNkxndU56akxOaTZnV04yOGFrdnBzQkd1S0FnZmgxbHpnTEV6YgpScVpoemVTN0lkM3RHRkFIaUxDeDVsbkFuaVIzM3JUaitjUmhLc2IxYnp1S3VETkNrZHAvaE9tM3J1Y3EKMTNyVnBJTHB1K2ZEV2R4aVZ1MjZyUUJHRXRWQkRHMTA5S0VROVZhSE9MVzhzb3RRTXc2a1pTQ1l1YXEwCkNnQk5ObkNYSUN0VndwcysK\",\"domain\":\"http://www.ooyala.com\",\"ec\":\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\",\"params\":\"{\\\"embedToken\\\":\\\"http:\\\\/\\\\/player.ooyala.com\\\\/sas\\\\/embed_token\\\\/04c2w6i30YAK09cxroJ0mFx86Hmv\\\\/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu?account_id=accountID&api_key=04c2w6i30YAK09cxroJ0mFx86Hmv.HVphU&expires=1452672606&signature=G4kW1cFufjrKoHQ0WHhjiSEfdnkyy%2FOQnQcIwGlWkvE\\\",\\\"authToken\\\":\\\"MkszemVlZFltaUVpMDk0YUR2cDMxRmQ3U3QzVXFMWFl6SXBwb2s4TERzU1FoU1AxTmIzYTVRbExBeCtoCmlHL0tsdHZ1bE9ueGRmMS9QMUdNTjJXNkxndU56akxOaTZnV04yOGFrdnBzQkd1S0FnZmgxbHpnTEV6YgpScVpoemVTN0lkM3RHRkFIaUxDeDVsbkFuaVIzM3JUaitjUmhLc2IxYnp1S3VETkNrZHAvaE9tM3J1Y3EKMTNyVnBJTHB1K2ZEV2R4aVZ1MjZyUUJHRXRWQkRHMTA5S0VROVZhSE9MVzhzb3RRTXc2a1pTQ1l1YXEwCkNnQk5ObkNYSUN0VndwcysK\\\",\\\"domain\\\":\\\"http:\\\\/\\\\/www.ooyala.com\\\",\\\"ec\\\":\\\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\\\"}\",\"title\":\"Android Chromecast Sender ANA\",\"description\":\"Do not delete/update/use asste. Used for analytics\",\"promo_url\":\"http://ak.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8\",\"pbid\":\"edf6a1d28ce242b8baac099cd9753fcd\"}},\"currentItemId\":1,\"repeatMode\":\"REPEAT_OFF\",\"data\":{\"customData\":{\"debug\":false}}}],\"requestId\":2}"}
+receiver_custom_qa.html:1Mixed Content: The page at 'https://player.ooyala.com/static/chromecast/staging/receiver_custom_qa.html' was loaded over HTTPS, but requested an insecure image 'http://ak.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8'. This content should also be served over HTTPS.
+cast_receiver.js:40 [ 24.296s] [cast.receiver.IpcChannel] Received message: {"data":"{\"requestId\":3,\"type\":\"PLAY\",\"mediaSessionId\":1}","namespace":"urn:x-cast:com.google.cast.media","senderId":"31:com.ooyala.sample.ChromecastSampleApp-8"}
+cast_receiver.js:40 [ 24.302s] [cast.receiver.CastMessageBus] Dispatching CastMessageBus message
+edf6a1d28ce242b8baac099cd9753fcd:61V3 version: a2f5b6d44ae93878175f65e22f7aa5b2e634ff27
+edf6a1d28ce242b8baac099cd9753fcd:61V3 version source: page-level-override
+cast_receiver.js:40 [ 28.604s] [cast.receiver.MediaManager] Using default Player
+receiver_custom_qa.html:855Mixed Content: The page at 'https://player.ooyala.com/static/chromecast/staging/receiver_custom_qa.html' was loaded over HTTPS, but requested an insecure image 'http://ak.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8'. This content should also be served over HTTPS.
+receiver_custom_qa.html:1Mixed Content: The page at 'https://player.ooyala.com/static/chromecast/staging/receiver_custom_qa.html' was loaded over HTTPS, but requested an insecure image 'http://ak.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8?t=1452672309867'. This content should also be served over HTTPS.
+cast_receiver.js:40 [ 30.143s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"contentTreeFetched\",\"1\":{\"title\":\"Android Chromecast Sender ANA\",\"embed_code\":\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\",\"cue_ads\":[],\"ads\":[],\"duration\":60727,\"description\":\"Do not delete/update/use asste. Used for analytics\",\"promo_image\":\"https://secure-cf-c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8\",\"thumbnail_image\":\"https://secure-cf-c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBhOzV3Va\",\"asset_pcode\":\"04c2w6i30YAK09cxroJ0mFx86Hmv\",\"hostedAtURL\":\"https://player.ooyala.com/static/chromecast/staging/receiver_custom_qa.html\",\"content_type\":\"Video\"}}"}
+media_player.js:21 [  1.383s] [cast.player.api.Player] Version: 1.0.0.25
+media_player.js:21 [  4.471s] [cast.player.api.Player] load
+media_player.js:21 [  4.493s] [goog.net.XhrIo] Opening Xhr [GET http://player.ooyala.com/player/all/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu.m3u8?targetBitrate=500 -1]
+media_player.js:21 [  4.502s] [goog.net.XhrIo] Will abort after 30000ms if incomplete, xhr2 false [GET http://player.ooyala.com/player/all/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu.m3u8?targetBitrate=500 -1]
+media_player.js:21 [  4.509s] [goog.net.XhrIo] Sending request [GET http://player.ooyala.com/player/all/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu.m3u8?targetBitrate=500 -1]
+media_player.js:37Mixed Content: The page at 'https://player.ooyala.com/static/chromecast/staging/receiver_custom_qa.html' was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http://player.ooyala.com/player/all/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu.m3u8?targetBitrate=500'. This content should also be served over HTTPS.
+media_player.js:21 [  4.528s] [cast.player.core.MediaSourceManager] open
+media_player.js:21 [  4.749s] [cast.player.core.MediaSourceManager] sourceopen
+media_player.js:21 [  5.482s] [goog.net.XhrIo] Request complete [GET http://player.ooyala.com/player/all/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu.m3u8?targetBitrate=500 200]
+media_player.js:21 [  5.567s] [cast.player.core.QualityManager] 0: initial 778000
+media_player.js:21 [  5.574s] [cast.player.hls.Playlist] update: http://player.ooyala.com/player/all/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu_600.m3u8
+media_player.js:21 [  5.587s] [goog.net.XhrIo] Opening Xhr [GET http://player.ooyala.com/player/all/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu_600.m3u8 -1]
+media_player.js:21 [  5.597s] [goog.net.XhrIo] Will abort after 30000ms if incomplete, xhr2 false [GET http://player.ooyala.com/player/all/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu_600.m3u8 -1]
+media_player.js:21 [  5.603s] [goog.net.XhrIo] Sending request [GET http://player.ooyala.com/player/all/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu_600.m3u8 -1]
+media_player.js:37Mixed Content: The page at 'https://player.ooyala.com/static/chromecast/staging/receiver_custom_qa.html' was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http://player.ooyala.com/player/all/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu_600.m3u8'. This content should also be served over HTTPS.
+media_player.js:21 [  6.315s] [goog.net.XhrIo] Request complete [GET http://player.ooyala.com/player/all/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu_600.m3u8 200]
+cast_receiver.js:40 [ 35.968s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":0,\"2\":0,\"3\":0,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [  6.421s] [cast.player.core.SegmentManager] 0: seek success 0
+media_player.js:21 [  6.431s] [goog.net.XhrIo] Opening Xhr [GET http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/0.ts -1]
+media_player.js:21 [  6.442s] [goog.net.XhrIo] Will abort after 20000ms if incomplete, xhr2 false [GET http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/0.ts -1]
+media_player.js:21 [  6.451s] [goog.net.XhrIo] Sending request [GET http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/0.ts -1]
+media_player.js:37Mixed Content: The page at 'https://player.ooyala.com/static/chromecast/staging/receiver_custom_qa.html' was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/0.ts'. This content should also be served over HTTPS.
+media_player.js:21 [ 11.298s] [goog.net.XhrIo] Request complete [GET http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/0.ts 200]
+media_player.js:21 [ 11.315s] [cast.player.core.QualityManager] 0: current=1225310.40, average=1399678.72
+media_player.js:21 [ 11.323s] [cast.player.core.SegmentManager] 0: process segment
+media_player.js:21 [ 11.333s] [cast.player.hls.Adaptation] process segment
+media_player.js:21 [ 11.407s] [cast.player.hls.Adaptation] start: 0
+media_player.js:21 [ 11.412s] [cast.player.core.SegmentManager] 0: segment processed
+media_player.js:21 [ 11.418s] [cast.player.core.SourceBufferManager] 0: abort
+media_player.js:21 [ 11.427s] [cast.player.core.SourceBufferManager] 0: timestampOffset = 0
+media_player.js:21 [ 11.432s] [cast.player.core.SourceBufferManager] 0: append
+media_player.js:21 [ 11.600s] [goog.net.XhrIo] Opening Xhr [GET http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/9961.ts -1]
+media_player.js:21 [ 11.607s] [goog.net.XhrIo] Will abort after 20000ms if incomplete, xhr2 false [GET http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/9961.ts -1]
+media_player.js:21 [ 11.611s] [goog.net.XhrIo] Sending request [GET http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/9961.ts -1]
+media_player.js:37Mixed Content: The page at 'https://player.ooyala.com/static/chromecast/staging/receiver_custom_qa.html' was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/9961.ts'. This content should also be served over HTTPS.
+cast_receiver.js:40 [ 41.393s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":0,\"2\":60.9999,\"3\":5.111611,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 41.505s] [cast.receiver.MediaManager] Metadata loaded
+cast_receiver.js:40 [ 41.548s] [cast.receiver.MediaManager] Sending broadcast status message
+cast_receiver.js:40 [ 41.615s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:com.google.cast.media","senderId":"*:*","data":"{\"type\":\"MEDIA_STATUS\",\"status\":[{\"mediaSessionId\":1,\"playbackRate\":1,\"playerState\":\"BUFFERING\",\"currentTime\":0,\"supportedMediaCommands\":15,\"volume\":{\"level\":1,\"muted\":false},\"media\":{\"contentId\":\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\",\"streamType\":\"BUFFERED\",\"contentType\":\"video/mp4\",\"metadata\":{\"metadataType\":0,\"images\":[{\"url\":\"http://ak.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8\",\"width\":0,\"height\":0}],\"title\":\"Android Chromecast Sender ANA\"},\"duration\":60.9999,\"customData\":{\"embedToken\":\"http://player.ooyala.com/sas/embed_token/04c2w6i30YAK09cxroJ0mFx86Hmv/14b2o…xpires=1452672606&signature=G4kW1cFufjrKoHQ0WHhjiSEfdnkyy%2FOQnQcIwGlWkvE\",\"authToken\":\"MkszemVlZFltaUVpMDk0YUR2cDMxRmQ3U3QzVXFMWFl6SXBwb2s4TERzU1FoU1AxTmIzYTVRbExBeCtoCmlHL0tsdHZ1bE9ueGRmMS9QMUdNTjJXNkxndU56akxOaTZnV04yOGFrdnBzQkd1S0FnZmgxbHpnTEV6YgpScVpoemVTN0lkM3RHRkFIaUxDeDVsbkFuaVIzM3JUaitjUmhLc2IxYnp1S3VETkNrZHAvaE9tM3J1Y3EKMTNyVnBJTHB1K2ZEV2R4aVZ1MjZyUUJHRXRWQkRHMTA5S0VROVZhSE9MVzhzb3RRTXc2a1pTQ1l1YXEwCkNnQk5ObkNYSUN0VndwcysK\",\"domain\":\"http://www.ooyala.com\",\"ec\":\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\",\"params\":\"{\\\"embedToken\\\":\\\"http:\\\\/\\\\/player.ooyala.com\\\\/sas\\\\/embed_token\\\\/04c2w6i30YAK09cxroJ0mFx86Hmv\\\\/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu?account_id=accountID&api_key=04c2w6i30YAK09cxroJ0mFx86Hmv.HVphU&expires=1452672606&signature=G4kW1cFufjrKoHQ0WHhjiSEfdnkyy%2FOQnQcIwGlWkvE\\\",\\\"authToken\\\":\\\"MkszemVlZFltaUVpMDk0YUR2cDMxRmQ3U3QzVXFMWFl6SXBwb2s4TERzU1FoU1AxTmIzYTVRbExBeCtoCmlHL0tsdHZ1bE9ueGRmMS9QMUdNTjJXNkxndU56akxOaTZnV04yOGFrdnBzQkd1S0FnZmgxbHpnTEV6YgpScVpoemVTN0lkM3RHRkFIaUxDeDVsbkFuaVIzM3JUaitjUmhLc2IxYnp1S3VETkNrZHAvaE9tM3J1Y3EKMTNyVnBJTHB1K2ZEV2R4aVZ1MjZyUUJHRXRWQkRHMTA5S0VROVZhSE9MVzhzb3RRTXc2a1pTQ1l1YXEwCkNnQk5ObkNYSUN0VndwcysK\\\",\\\"domain\\\":\\\"http:\\\\/\\\\/www.ooyala.com\\\",\\\"ec\\\":\\\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\\\"}\",\"title\":\"Android Chromecast Sender ANA\",\"description\":\"Do not delete/update/use asste. Used for analytics\",\"promo_url\":\"http://ak.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8\",\"pbid\":\"edf6a1d28ce242b8baac099cd9753fcd\"}},\"currentItemId\":1,\"items\":[{\"itemId\":1,\"media\":{\"contentId\":\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\",\"streamType\":\"BUFFERED\",\"contentType\":\"video/mp4\",\"metadata\":{\"metadataType\":0,\"images\":[{\"url\":\"http://ak.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8\",\"width\":0,\"height\":0}],\"title\":\"Android Chromecast Sender ANA\"},\"duration\":60.9999,\"customData\":{\"embedToken\":\"http://player.ooyala.com/sas/embed_token/04c2w6i30YAK09cxroJ0mFx86Hmv/14b2o…xpires=1452672606&signature=G4kW1cFufjrKoHQ0WHhjiSEfdnkyy%2FOQnQcIwGlWkvE\",\"authToken\":\"MkszemVlZFltaUVpMDk0YUR2cDMxRmQ3U3QzVXFMWFl6SXBwb2s4TERzU1FoU1AxTmIzYTVRbExBeCtoCmlHL0tsdHZ1bE9ueGRmMS9QMUdNTjJXNkxndU56akxOaTZnV04yOGFrdnBzQkd1S0FnZmgxbHpnTEV6YgpScVpoemVTN0lkM3RHRkFIaUxDeDVsbkFuaVIzM3JUaitjUmhLc2IxYnp1S3VETkNrZHAvaE9tM3J1Y3EKMTNyVnBJTHB1K2ZEV2R4aVZ1MjZyUUJHRXRWQkRHMTA5S0VROVZhSE9MVzhzb3RRTXc2a1pTQ1l1YXEwCkNnQk5ObkNYSUN0VndwcysK\",\"domain\":\"http://www.ooyala.com\",\"ec\":\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\",\"params\":\"{\\\"embedToken\\\":\\\"http:\\\\/\\\\/player.ooyala.com\\\\/sas\\\\/embed_token\\\\/04c2w6i30YAK09cxroJ0mFx86Hmv\\\\/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu?account_id=accountID&api_key=04c2w6i30YAK09cxroJ0mFx86Hmv.HVphU&expires=1452672606&signature=G4kW1cFufjrKoHQ0WHhjiSEfdnkyy%2FOQnQcIwGlWkvE\\\",\\\"authToken\\\":\\\"MkszemVlZFltaUVpMDk0YUR2cDMxRmQ3U3QzVXFMWFl6SXBwb2s4TERzU1FoU1AxTmIzYTVRbExBeCtoCmlHL0tsdHZ1bE9ueGRmMS9QMUdNTjJXNkxndU56akxOaTZnV04yOGFrdnBzQkd1S0FnZmgxbHpnTEV6YgpScVpoemVTN0lkM3RHRkFIaUxDeDVsbkFuaVIzM3JUaitjUmhLc2IxYnp1S3VETkNrZHAvaE9tM3J1Y3EKMTNyVnBJTHB1K2ZEV2R4aVZ1MjZyUUJHRXRWQkRHMTA5S0VROVZhSE9MVzhzb3RRTXc2a1pTQ1l1YXEwCkNnQk5ObkNYSUN0VndwcysK\\\",\\\"domain\\\":\\\"http:\\\\/\\\\/www.ooyala.com\\\",\\\"ec\\\":\\\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\\\"}\",\"title\":\"Android Chromecast Sender ANA\",\"description\":\"Do not delete/update/use asste. Used for analytics\",\"promo_url\":\"http://ak.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8\",\"pbid\":\"edf6a1d28ce242b8baac099cd9753fcd\"}},\"autoplay\":true}],\"repeatMode\":\"REPEAT_OFF\",\"data\":{\"customData\":{\"debug\":false}}}],\"requestId\":2}"}
+cast_receiver.js:40 [ 41.657s] [cast.receiver.MediaManager] MediaManager message received
+cast_receiver.js:40 [ 41.693s] [cast.receiver.MediaManager] Dispatching MediaManager play event
+cast_receiver.js:40 [ 41.706s] [cast.receiver.MediaManager] onPlay
+cast_receiver.js:40 [ 41.738s] [cast.receiver.MediaManager] Sending broadcast status message
+cast_receiver.js:40 [ 41.755s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:com.google.cast.media","senderId":"*:*","data":"{\"type\":\"MEDIA_STATUS\",\"status\":[{\"mediaSessionId\":1,\"playbackRate\":1,\"playerState\":\"BUFFERING\",\"currentTime\":0,\"supportedMediaCommands\":15,\"volume\":{\"level\":1,\"muted\":false},\"currentItemId\":1,\"repeatMode\":\"REPEAT_OFF\",\"data\":{\"customData\":{\"debug\":false}}}],\"requestId\":3}"}
+cast_receiver.js:40 [ 41.922s] [cast.receiver.MediaManager] Sending status message to 31:com.ooyala.sample.ChromecastSampleApp-8
+cast_receiver.js:40 [ 41.947s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:com.google.cast.media","senderId":"31:com.ooyala.sample.ChromecastSampleApp-8","data":"{\"type\":\"MEDIA_STATUS\",\"status\":[{\"mediaSessionId\":1,\"playbackRate\":1,\"playerState\":\"BUFFERING\",\"currentTime\":0,\"supportedMediaCommands\":15,\"volume\":{\"level\":1,\"muted\":false},\"media\":{\"contentId\":\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\",\"streamType\":\"BUFFERED\",\"contentType\":\"video/mp4\",\"metadata\":{\"metadataType\":0,\"images\":[{\"url\":\"http://ak.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8\",\"width\":0,\"height\":0}],\"title\":\"Android Chromecast Sender ANA\"},\"duration\":60.9999,\"customData\":{\"embedToken\":\"http://player.ooyala.com/sas/embed_token/04c2w6i30YAK09cxroJ0mFx86Hmv/14b2o…xpires=1452672606&signature=G4kW1cFufjrKoHQ0WHhjiSEfdnkyy%2FOQnQcIwGlWkvE\",\"authToken\":\"MkszemVlZFltaUVpMDk0YUR2cDMxRmQ3U3QzVXFMWFl6SXBwb2s4TERzU1FoU1AxTmIzYTVRbExBeCtoCmlHL0tsdHZ1bE9ueGRmMS9QMUdNTjJXNkxndU56akxOaTZnV04yOGFrdnBzQkd1S0FnZmgxbHpnTEV6YgpScVpoemVTN0lkM3RHRkFIaUxDeDVsbkFuaVIzM3JUaitjUmhLc2IxYnp1S3VETkNrZHAvaE9tM3J1Y3EKMTNyVnBJTHB1K2ZEV2R4aVZ1MjZyUUJHRXRWQkRHMTA5S0VROVZhSE9MVzhzb3RRTXc2a1pTQ1l1YXEwCkNnQk5ObkNYSUN0VndwcysK\",\"domain\":\"http://www.ooyala.com\",\"ec\":\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\",\"params\":\"{\\\"embedToken\\\":\\\"http:\\\\/\\\\/player.ooyala.com\\\\/sas\\\\/embed_token\\\\/04c2w6i30YAK09cxroJ0mFx86Hmv\\\\/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu?account_id=accountID&api_key=04c2w6i30YAK09cxroJ0mFx86Hmv.HVphU&expires=1452672606&signature=G4kW1cFufjrKoHQ0WHhjiSEfdnkyy%2FOQnQcIwGlWkvE\\\",\\\"authToken\\\":\\\"MkszemVlZFltaUVpMDk0YUR2cDMxRmQ3U3QzVXFMWFl6SXBwb2s4TERzU1FoU1AxTmIzYTVRbExBeCtoCmlHL0tsdHZ1bE9ueGRmMS9QMUdNTjJXNkxndU56akxOaTZnV04yOGFrdnBzQkd1S0FnZmgxbHpnTEV6YgpScVpoemVTN0lkM3RHRkFIaUxDeDVsbkFuaVIzM3JUaitjUmhLc2IxYnp1S3VETkNrZHAvaE9tM3J1Y3EKMTNyVnBJTHB1K2ZEV2R4aVZ1MjZyUUJHRXRWQkRHMTA5S0VROVZhSE9MVzhzb3RRTXc2a1pTQ1l1YXEwCkNnQk5ObkNYSUN0VndwcysK\\\",\\\"domain\\\":\\\"http:\\\\/\\\\/www.ooyala.com\\\",\\\"ec\\\":\\\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\\\"}\",\"title\":\"Android Chromecast Sender ANA\",\"description\":\"Do not delete/update/use asste. Used for analytics\",\"promo_url\":\"http://ak.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8\",\"pbid\":\"edf6a1d28ce242b8baac099cd9753fcd\"}},\"currentItemId\":1,\"repeatMode\":\"REPEAT_OFF\",\"data\":{\"customData\":{\"debug\":false}}}],\"requestId\":3}"}
+media_player.js:21 [ 12.548s] [cast.player.api.Player] 1: time=0.156284
+cast_receiver.js:40 [ 42.374s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playing\"}"}
+cast_receiver.js:40 [ 42.405s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playing\"}"}
+media_player.js:21 [ 13.239s] [cast.player.api.Player] 1: time=0.789556
+cast_receiver.js:40 [ 43.127s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":0.989737,\"2\":60.9999,\"3\":8.948777,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 43.428s] [cast.receiver.MediaManager] Buffering state changed, isPlayerBuffering: false old time: 0 current time: 1.393849
+cast_receiver.js:40 [ 43.437s] [cast.receiver.MediaManager] Sending broadcast status message
+cast_receiver.js:40 [ 43.451s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:com.google.cast.media","senderId":"*:*","data":"{\"type\":\"MEDIA_STATUS\",\"status\":[{\"mediaSessionId\":1,\"playbackRate\":1,\"playerState\":\"PLAYING\",\"currentTime\":1.415272,\"supportedMediaCommands\":15,\"volume\":{\"level\":1,\"muted\":false},\"currentItemId\":1,\"repeatMode\":\"REPEAT_OFF\",\"data\":{\"customData\":{\"debug\":false}}}],\"requestId\":0}"}
+media_player.js:21 [ 14.058s] [cast.player.api.Player] 1: time=1.587947
+media_player.js:21 [ 14.103s] [cast.player.core.SourceBufferManager] 0: 0 - 9.699533
+media_player.js:21 [ 14.117s] [cast.player.core.SourceBufferManager] 0: updateend
+cast_receiver.js:40 [ 43.736s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":1.680485,\"2\":60.9999,\"3\":9.699533,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 43.931s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":1.848567,\"2\":60.9999,\"3\":9.699533,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 14.480s] [cast.player.api.Player] 1: time=2.00005
+cast_receiver.js:40 [ 44.564s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":2.428827,\"2\":60.9999,\"3\":9.699533,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 15.190s] [cast.player.api.Player] 1: time=2.721622
+cast_receiver.js:40 [ 44.998s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":2.88661,\"2\":60.9999,\"3\":9.699533,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 15.741s] [cast.player.api.Player] 1: time=3.294
+cast_receiver.js:40 [ 45.555s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":3.485379,\"2\":60.9999,\"3\":9.699533,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 16.193s] [cast.player.api.Player] 1: time=3.728594
+cast_receiver.js:40 [ 45.866s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":3.828488,\"2\":60.9999,\"3\":9.699533,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 16.400s] [goog.net.XhrIo] Request complete [GET http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/9961.ts 200]
+media_player.js:21 [ 16.421s] [cast.player.core.QualityManager] 0: current=1503376.58, average=1482637.01
+media_player.js:21 [ 16.431s] [cast.player.core.SegmentManager] 0: process segment
+media_player.js:21 [ 16.436s] [cast.player.hls.Adaptation] process segment
+media_player.js:21 [ 16.454s] [cast.player.core.SegmentManager] 0: segment processed
+media_player.js:21 [ 16.462s] [cast.player.core.SourceBufferManager] adjustTime: 10 : 9.699533
+media_player.js:21 [ 16.468s] [cast.player.core.SourceBufferManager] 0: append
+media_player.js:21 [ 16.749s] [goog.net.XhrIo] Opening Xhr [GET http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/19899.ts -1]
+media_player.js:21 [ 16.762s] [goog.net.XhrIo] Will abort after 20000ms if incomplete, xhr2 false [GET http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/19899.ts -1]
+media_player.js:21 [ 16.774s] [goog.net.XhrIo] Sending request [GET http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/19899.ts -1]
+media_player.js:37Mixed Content: The page at 'https://player.ooyala.com/static/chromecast/staging/receiver_custom_qa.html' was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/19899.ts'. This content should also be served over HTTPS.
+media_player.js:21 [ 16.796s] [cast.player.api.Player] 1: time=4.262274
+cast_receiver.js:40 [ 46.395s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":4.331558,\"2\":60.9999,\"3\":11.0342,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 46.648s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":4.544258,\"2\":60.9999,\"3\":13.786955,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 17.623s] [cast.player.api.Player] 1: time=5.129366
+cast_receiver.js:40 [ 47.287s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":5.165713,\"2\":60.9999,\"3\":16.915077,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 47.580s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":5.502576,\"2\":60.9999,\"3\":19.626122,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 18.123s] [cast.player.core.SourceBufferManager] 0: 0 - 19.626122
+media_player.js:21 [ 18.137s] [cast.player.core.SourceBufferManager] 0: updateend
+media_player.js:21 [ 18.169s] [cast.player.api.Player] 1: time=5.711615
+cast_receiver.js:40 [ 47.767s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":5.726114,\"2\":60.9999,\"3\":19.626122,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 18.587s] [cast.player.api.Player] 1: time=6.126311
+cast_receiver.js:40 [ 48.325s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":6.27269,\"2\":60.9999,\"3\":19.626122,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 48.581s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":6.515346,\"2\":60.9999,\"3\":19.626122,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 19.071s] [cast.player.api.Player] 1: time=6.587733
+cast_receiver.js:40 [ 48.835s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":6.812458,\"2\":60.9999,\"3\":19.626122,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 19.486s] [cast.player.api.Player] 1: time=7.026431
+cast_receiver.js:40 [ 49.104s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":7.072889,\"2\":60.9999,\"3\":19.626122,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 49.348s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":7.305425,\"2\":60.9999,\"3\":19.626122,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 19.895s] [cast.player.api.Player] 1: time=7.426949
+cast_receiver.js:40 [ 49.604s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":7.555375,\"2\":60.9999,\"3\":19.626122,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 49.873s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":7.813192,\"2\":60.9999,\"3\":19.626122,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 20.344s] [cast.player.api.Player] 1: time=7.866486
+cast_receiver.js:40 [ 50.125s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":8.092847,\"2\":60.9999,\"3\":19.626122,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 20.758s] [cast.player.api.Player] 1: time=8.292432
+cast_receiver.js:40 [ 50.382s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":8.340658,\"2\":60.9999,\"3\":19.626122,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 50.643s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":8.584899,\"2\":60.9999,\"3\":19.626122,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 21.168s] [cast.player.api.Player] 1: time=8.690095
+cast_receiver.js:40 [ 50.914s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":8.853467,\"2\":60.9999,\"3\":19.626122,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 21.579s] [cast.player.api.Player] 1: time=9.121288
+media_player.js:21 [ 21.774s] [goog.net.XhrIo] Request complete [GET http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/19899.ts 200]
+media_player.js:21 [ 21.789s] [cast.player.core.QualityManager] 0: current=1506686.25, average=1501876.40
+media_player.js:21 [ 21.796s] [cast.player.core.SegmentManager] 0: process segment
+media_player.js:21 [ 21.802s] [cast.player.hls.Adaptation] process segment
+media_player.js:21 [ 21.809s] [cast.player.core.SegmentManager] 0: segment processed
+media_player.js:21 [ 21.816s] [cast.player.core.SourceBufferManager] adjustTime: 20 : 19.626122
+media_player.js:21 [ 21.823s] [cast.player.core.SourceBufferManager] 0: append
+media_player.js:21 [ 21.983s] [cast.player.api.Player] 1: time=9.519603
+cast_receiver.js:40 [ 51.567s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":9.527452,\"2\":60.9999,\"3\":20.627122,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 51.868s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":9.790736,\"2\":60.9999,\"3\":24.589422,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 22.432s] [goog.net.XhrIo] Opening Xhr [GET http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/29814.ts -1]
+media_player.js:21 [ 22.449s] [goog.net.XhrIo] Will abort after 20000ms if incomplete, xhr2 false [GET http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/29814.ts -1]
+media_player.js:21 [ 22.462s] [goog.net.XhrIo] Sending request [GET http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/29814.ts -1]
+media_player.js:37Mixed Content: The page at 'https://player.ooyala.com/static/chromecast/staging/receiver_custom_qa.html' was loaded over HTTPS, but requested an insecure XMLHttpRequest endpoint 'http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/29814.ts'. This content should also be served over HTTPS.
+media_player.js:21 [ 22.495s] [cast.player.api.Player] 1: time=9.95413
+cast_receiver.js:40 [ 52.120s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":10.06454,\"2\":60.9999,\"3\":27.926088,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 22.611s] [cast.player.core.SourceBufferManager] 0: 0 - 29.552722
+media_player.js:21 [ 22.624s] [cast.player.core.SourceBufferManager] 0: updateend
+cast_receiver.js:40 [ 52.343s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":10.288213,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 22.926s] [cast.player.api.Player] 1: time=10.43517
+cast_receiver.js:40 [ 52.597s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":10.530985,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 52.884s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":10.817035,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 23.367s] [cast.player.api.Player] 1: time=10.903956
+cast_receiver.js:40 [ 53.155s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":11.078982,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 23.784s] [cast.player.api.Player] 1: time=11.312683
+cast_receiver.js:40 [ 53.368s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":11.32139,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 53.651s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":11.569825,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 24.194s] [cast.player.api.Player] 1: time=11.705135
+cast_receiver.js:40 [ 53.888s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":11.824802,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 54.145s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":12.081099,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 24.618s] [cast.player.api.Player] 1: time=12.161968
+cast_receiver.js:40 [ 54.413s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":12.371843,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 25.030s] [cast.player.api.Player] 1: time=12.56449
+cast_receiver.js:40 [ 54.673s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":12.625685,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 54.941s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":12.873319,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 25.443s] [cast.player.api.Player] 1: time=12.957775
+cast_receiver.js:40 [ 55.201s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":13.126098,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 25.923s] [cast.player.api.Player] 1: time=13.429036
+cast_receiver.js:40 [ 55.534s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":13.463435,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 55.765s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":13.723812,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 26.331s] [cast.player.api.Player] 1: time=13.86745
+cast_receiver.js:40 [ 56.032s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":13.971147,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 56.319s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":14.236511,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 26.798s] [cast.player.api.Player] 1: time=14.315609
+cast_receiver.js:40 [ 56.572s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":14.52821,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 27.214s] [cast.player.api.Player] 1: time=14.750854
+cast_receiver.js:40 [ 56.810s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":14.765872,\"2\":60.9999,\"3\":29.552722,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 27.268s] [goog.net.XhrIo] Request complete [GET http://cf.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/BSTvrtgAYH4e8vrlCrFjLVvHfqr5GdQznYs2LrUVV6uBffOyEtaANqlrrkkmeD1M/29814.ts 200]
+media_player.js:21 [ 27.281s] [cast.player.core.QualityManager] 0: current=1564197.24, average=1551733.07
+media_player.js:21 [ 27.290s] [cast.player.core.SegmentManager] 0: process segment
+media_player.js:21 [ 27.304s] [cast.player.hls.Adaptation] process segment
+media_player.js:21 [ 27.312s] [cast.player.core.SegmentManager] 0: segment processed
+media_player.js:21 [ 27.319s] [cast.player.core.SourceBufferManager] adjustTime: 30 : 29.552722
+media_player.js:21 [ 27.325s] [cast.player.core.SourceBufferManager] 0: append
+media_player.js:21 [ 27.471s] [cast.player.api.Player] 1: time=15.004795
+cast_receiver.js:40 [ 57.098s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":15.05742,\"2\":60.9999,\"3\":33.890388,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 27.613s] [cast.player.core.SourceBufferManager] 0: 0 - 39.479311
+media_player.js:21 [ 27.619s] [cast.player.core.SourceBufferManager] 0: updateend
+media_player.js:21 [ 27.885s] [cast.player.api.Player] 1: time=15.415756
+cast_receiver.js:40 [ 57.580s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":15.522061,\"2\":60.9999,\"3\":39.479311,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 57.840s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":15.759415,\"2\":60.9999,\"3\":39.479311,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 28.307s] [cast.player.api.Player] 1: time=15.816432
+cast_receiver.js:40 [ 58.079s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":16.048103,\"2\":60.9999,\"3\":39.479311,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 28.735s] [cast.player.api.Player] 1: time=16.268223
+cast_receiver.js:40 [ 58.341s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":16.302174,\"2\":60.9999,\"3\":39.479311,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 58.607s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":16.556275,\"2\":60.9999,\"3\":39.479311,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 29.147s] [cast.player.api.Player] 1: time=16.670536
+cast_receiver.js:40 [ 59.123s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":17.041625,\"2\":60.9999,\"3\":39.479311,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 29.606s] [cast.player.api.Player] 1: time=17.10991
+cast_receiver.js:40 [ 59.406s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":17.3619,\"2\":60.9999,\"3\":39.479311,\"4\":{\"start\":0,\"end\":60.9999}}"}
+media_player.js:21 [ 30.026s] [cast.player.api.Player] 1: time=17.551972
+cast_receiver.js:40 [ 59.640s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":17.584659,\"2\":60.9999,\"3\":39.479311,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 59.844s] [cast.receiver.IpcChannel] Received message: {"data":"{\"requestId\":4,\"type\":\"PAUSE\",\"mediaSessionId\":1}","namespace":"urn:x-cast:com.google.cast.media","senderId":"31:com.ooyala.sample.ChromecastSampleApp-8"}
+cast_receiver.js:40 [ 59.855s] [cast.receiver.CastMessageBus] Dispatching CastMessageBus message
+cast_receiver.js:40 [ 59.863s] [cast.receiver.MediaManager] MediaManager message received
+cast_receiver.js:40 [ 59.869s] [cast.receiver.MediaManager] Dispatching MediaManager pause event
+cast_receiver.js:40 [ 59.883s] [cast.receiver.MediaManager] Sending broadcast status message
+cast_receiver.js:40 [ 59.891s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:com.google.cast.media","senderId":"*:*","data":"{\"type\":\"MEDIA_STATUS\",\"status\":[{\"mediaSessionId\":1,\"playbackRate\":1,\"playerState\":\"PAUSED\",\"currentTime\":17.83412,\"supportedMediaCommands\":15,\"volume\":{\"level\":1,\"muted\":false},\"currentItemId\":1,\"repeatMode\":\"REPEAT_OFF\",\"data\":{\"customData\":{\"debug\":false}}}],\"requestId\":4}"}
+cast_receiver.js:40 [ 59.914s] [cast.receiver.MediaManager] Sending status message to 31:com.ooyala.sample.ChromecastSampleApp-8
+cast_receiver.js:40 [ 59.924s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:com.google.cast.media","senderId":"31:com.ooyala.sample.ChromecastSampleApp-8","data":"{\"type\":\"MEDIA_STATUS\",\"status\":[{\"mediaSessionId\":1,\"playbackRate\":1,\"playerState\":\"PAUSED\",\"currentTime\":17.83412,\"supportedMediaCommands\":15,\"volume\":{\"level\":1,\"muted\":false},\"media\":{\"contentId\":\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\",\"streamType\":\"BUFFERED\",\"contentType\":\"video/mp4\",\"metadata\":{\"metadataType\":0,\"images\":[{\"url\":\"http://ak.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8\",\"width\":0,\"height\":0}],\"title\":\"Android Chromecast Sender ANA\"},\"duration\":60.9999,\"customData\":{\"embedToken\":\"http://player.ooyala.com/sas/embed_token/04c2w6i30YAK09cxroJ0mFx86Hmv/14b2o…xpires=1452672606&signature=G4kW1cFufjrKoHQ0WHhjiSEfdnkyy%2FOQnQcIwGlWkvE\",\"authToken\":\"MkszemVlZFltaUVpMDk0YUR2cDMxRmQ3U3QzVXFMWFl6SXBwb2s4TERzU1FoU1AxTmIzYTVRbExBeCtoCmlHL0tsdHZ1bE9ueGRmMS9QMUdNTjJXNkxndU56akxOaTZnV04yOGFrdnBzQkd1S0FnZmgxbHpnTEV6YgpScVpoemVTN0lkM3RHRkFIaUxDeDVsbkFuaVIzM3JUaitjUmhLc2IxYnp1S3VETkNrZHAvaE9tM3J1Y3EKMTNyVnBJTHB1K2ZEV2R4aVZ1MjZyUUJHRXRWQkRHMTA5S0VROVZhSE9MVzhzb3RRTXc2a1pTQ1l1YXEwCkNnQk5ObkNYSUN0VndwcysK\",\"domain\":\"http://www.ooyala.com\",\"ec\":\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\",\"params\":\"{\\\"embedToken\\\":\\\"http:\\\\/\\\\/player.ooyala.com\\\\/sas\\\\/embed_token\\\\/04c2w6i30YAK09cxroJ0mFx86Hmv\\\\/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu?account_id=accountID&api_key=04c2w6i30YAK09cxroJ0mFx86Hmv.HVphU&expires=1452672606&signature=G4kW1cFufjrKoHQ0WHhjiSEfdnkyy%2FOQnQcIwGlWkvE\\\",\\\"authToken\\\":\\\"MkszemVlZFltaUVpMDk0YUR2cDMxRmQ3U3QzVXFMWFl6SXBwb2s4TERzU1FoU1AxTmIzYTVRbExBeCtoCmlHL0tsdHZ1bE9ueGRmMS9QMUdNTjJXNkxndU56akxOaTZnV04yOGFrdnBzQkd1S0FnZmgxbHpnTEV6YgpScVpoemVTN0lkM3RHRkFIaUxDeDVsbkFuaVIzM3JUaitjUmhLc2IxYnp1S3VETkNrZHAvaE9tM3J1Y3EKMTNyVnBJTHB1K2ZEV2R4aVZ1MjZyUUJHRXRWQkRHMTA5S0VROVZhSE9MVzhzb3RRTXc2a1pTQ1l1YXEwCkNnQk5ObkNYSUN0VndwcysK\\\",\\\"domain\\\":\\\"http:\\\\/\\\\/www.ooyala.com\\\",\\\"ec\\\":\\\"14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu\\\"}\",\"title\":\"Android Chromecast Sender ANA\",\"description\":\"Do not delete/update/use asste. Used for analytics\",\"promo_url\":\"http://ak.c.ooyala.com/14b2o3dzqEtGMHs-p4VDBGTbWk3aVDiu/3Gduepif0T1UGY8H4xMDoxOjBrO-I4W8\",\"pbid\":\"edf6a1d28ce242b8baac099cd9753fcd\"}},\"currentItemId\":1,\"repeatMode\":\"REPEAT_OFF\",\"data\":{\"customData\":{\"debug\":false}}}],\"requestId\":4}"}
+cast_receiver.js:40 [ 59.956s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"playheadTimeChanged\",\"1\":17.83412,\"2\":60.9999,\"3\":39.479311,\"4\":{\"start\":0,\"end\":60.9999}}"}
+cast_receiver.js:40 [ 60.000s] [cast.receiver.IpcChannel] IPC message sent: {"namespace":"urn:x-cast:ooyala","senderId":"*:*","data":"{\"0\":\"paused\"}"}
+media_player.js:21 [ 30.474s] [cast.player.api.Player] 1: time=17.83412
+cast_receiver.js:40 [ 66.505s] [cast.receiver.IpcChannel] Received message: {"data":"{\"reason\":\"closed_by_peer\",\"senderId\":\"31:com.ooyala.sample.ChromecastSampleApp-8\",\"type\":\"senderdisconnected\"}","namespace":"urn:x-cast:com.google.cast.system","senderId":"SystemSender"}
+cast_receiver.js:40 [ 66.518s] [cast.receiver.CastMessageBus] Dispatching CastMessageBus message
+cast_receiver.js:40 [ 66.524s] [cast.receiver.CastReceiverManager] Dispatching sender disconnected event [31:com.ooyala.sample.ChromecastSampleApp-8] Reason: requested_by_sender
+cast_receiver.js:40 [ 66.532s] [cast.receiver.CastMessageBus] Unregistering sender [urn:x-cast:com.google.cast.media, 31:com.ooyala.sample.ChromecastSampleApp-8]
+cast_receiver.js:40 [ 66.537s] [cast.receiver.CastMessageBus] Unregistering sender [urn:x-cast:ooyala, 31:com.ooyala.sample.ChromecastSampleApp-8]
+cast_receiver.js:40 [ 66.548s] [cast.receiver.CastMessageBus] Disposed CastMessageBus[urn:x-cast:com.google.cast.system]
+cast_receiver.js:40 [ 66.557s] [cast.receiver.CastMessageBus] Disposed CastMessageBus[urn:x-cast:com.google.cast.media]
+www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js:40  [ 66.563s] [cast.receiver.CastMessageBus] Disposed CastMessageBus[urn:x-cast:ooyala]
+www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js:40  [ 66.576s] [cast.receiver.CastReceiverManager] Disposed CastReceiverManager
